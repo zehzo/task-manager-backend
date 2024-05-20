@@ -4,7 +4,7 @@ const TaskController = require("../controllers/task.controller");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  return new TaskController(req, res).get();
+  return new TaskController(req, res).getAll();
 });
 
 router.get("/:id", async (req, res) => {
